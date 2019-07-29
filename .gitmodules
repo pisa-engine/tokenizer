@@ -1,0 +1,6 @@
+[submodule "external/Catch2"]
+	path = external/Catch2
+	url = https://github.com/catchorg/Catch2.git
+[submodule "external/CMake-codecov"]
+	path = external/CMake-codecov
+	url = https://github.com/RWTH-HPC/CMake-codecov.git
