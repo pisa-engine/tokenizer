@@ -10,6 +10,7 @@ foreach(TEST_SRC ${TEST_SOURCES})
   add_executable(${TEST_SRC_NAME} ${TEST_SRC})
   target_link_libraries(${TEST_SRC_NAME}
     Catch2
+    tokenizer
     )
   catch_discover_tests(${TEST_SRC_NAME} TEST_PREFIX "${TEST_SRC_NAME}:")
 
@@ -17,4 +18,3 @@ foreach(TEST_SRC ${TEST_SOURCES})
   add_coverage(${TEST_SRC_NAME})
 endforeach(TEST_SRC)
 
-file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/test_data DESTINATION ${CMAKE_CURRENT_BINARY_DIR})

@@ -5,3 +5,6 @@ EXECUTE_PROCESS(COMMAND git submodule update --init
 
 # Add Catch
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Catch2)
+
+# Add Boost
+add_subdirectory(boost-cmake)
