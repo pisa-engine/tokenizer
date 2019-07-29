@@ -4,3 +4,6 @@
 [submodule "external/CMake-codecov"]
 	path = external/CMake-codecov
 	url = https://github.com/RWTH-HPC/CMake-codecov.git
+[submodule "external/boost-cmake"]
+	path = external/boost-cmake
+	url = https://github.com/Orphis/boost-cmake.git
