@@ -32,8 +32,7 @@ target_link_libraries(tokenizer
     Boost::boost
 )
 target_include_directories(tokenizer PUBLIC
-    $<BUILD_INTERFACE:${TOKENIZER_INCLUDE_BUILD_DIR}>
-    $<INSTALL_INTERFACE:${TOKENIZER_INCLUDE_INSTALL_DIR}>
+    $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
 )
 
 
