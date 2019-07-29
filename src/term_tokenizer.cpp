@@ -1,6 +1,4 @@
 #include <boost/config/warning_disable.hpp>
-#include <boost/iterator/filter_iterator.hpp>
-#include <boost/iterator/transform_iterator.hpp>
 #include <boost/spirit/include/lex_lexertl.hpp>
 #include <boost/spirit/include/phoenix_operator.hpp>
 #include <boost/spirit/include/qi.hpp>

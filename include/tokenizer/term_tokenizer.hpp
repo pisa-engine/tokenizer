@@ -6,8 +6,8 @@
 #include <string_view>
 #include <vector>
 
-#include <boost/compute/iterator/transform_iterator.hpp>
 #include <boost/iterator/filter_iterator.hpp>
+#include <boost/iterator/transform_iterator.hpp>
 #include <boost/spirit/include/lex_lexertl.hpp>
 
 namespace tok {
