@@ -8,18 +8,17 @@
 
 namespace tok {
 
-
 std::string TermTokenizer::transform(token_type const &tok)
 {
     auto &val = tok.value();
     switch (tok.id()) {
-    case AbbrToken: {
+    case TokenType::Acronym: {
         std::string term;
         std::copy_if(
             val.begin(), val.end(), std::back_inserter(term), [](char ch) { return ch != '.'; });
         return term;
     }
-    case PossessiveToken:
+    case TokenType::Possessive:
         return std::string(val.begin(), std::find(val.begin(), val.end(), '\''));
     default:
         return std::string(val.begin(), val.end());
