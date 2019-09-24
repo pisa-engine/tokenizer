@@ -9,8 +9,9 @@ using namespace tok;
 
 TEST_CASE("TermTokenizer")
 {
-    std::string str("w0rd, token-izer. pup's, U.S.a., us., hel.lo");
+    std::string str("a 1 12 w0rd, token-izer. pup's, U.S.a., us., hel.lo");
     TermTokenizer tokenizer(str);
-    REQUIRE(std::vector<std::string>(tokenizer.begin(), tokenizer.end()) ==
-            std::vector<std::string>{"w0rd", "token", "izer", "pup", "USa", "us", "hel", "lo"});
+    REQUIRE(std::vector<std::string>(tokenizer.begin(), tokenizer.end())
+            == std::vector<std::string>{
+                "a", "1", "12", "w0rd", "token", "izer", "pup", "USa", "us", "hel", "lo"});
 }
